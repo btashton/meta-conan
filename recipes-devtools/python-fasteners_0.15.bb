@@ -4,8 +4,8 @@ AUTHOR = "Joshua Harlow <harlowja@yahoo-inc.com>"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=4476c4be31402271e101d9a4a3430d52"
 
-SRC_URI[md5sum] = "fcb13261c9b0039d9b1c4feb9bc75e04"
-SRC_URI[sha256sum] = "427c76773fe036ddfa41e57d89086ea03111bbac57c55fc55f3006d027107e18"
+SRC_URI[md5sum] = "440f8ab461c8fed941355860d8669556"
+SRC_URI[sha256sum] = "3a176da6b70df9bb88498e1a18a9e4a8579ed5b9141207762368a1017bf8f5ef"
 
 RDEPENDS_${PN} = "\
     ${PYTHON_PN}-six \
@@ -18,6 +18,6 @@ DEPENDS_class-native = "\
     ${PYTHON_PN}-monotonic-native \
 "
 
-inherit pypi
+inherit pypi setuptools python-dir
 
 BBCLASSEXTEND = "native nativesdk"
